@@ -1,11 +1,11 @@
 <template>
     <div>
+        <div id="student-card" v-for="student in students" v-bind:key="student.studentId">
         <hr/>
-        <div id="student-card">
-            <span><b>Student ID: </b>{{studentId}}</span><br>
-            <span><b>Name: </b>{{name}}</span><br/>
-            <span><b>Institute: </b>{{institute}}</span><br/>
-            <span><b>Role: </b>{{role}}</span><br/>
+            <span><b>Student ID: </b>{{student.studentId}}</span><br>
+            <span><b>Name: </b>{{student.name}}</span><br/>
+            <span><b>Institute: </b>{{student.institute}}</span><br/>
+            <span><b>Role: </b>{{student.role}}</span><br/>
         </div>
     </div>
 </template>
@@ -18,6 +18,18 @@ export default {
         name: String,
         institute: String,
         role: String,
+    },
+    data(){
+        return {
+            students: [
+                {studentId: 'STD-001', name: 'Mike Mwanje', institute: 'Refactory', role: 'Student'},
+                {studentId: 'STD-002', name: 'Davies Wabuluka', institute: 'Refactory', role: 'Developer'},
+                {studentId: 'STD-003', name: 'Tsumaiya Nabawanuka', institute: 'Refactory', role: 'Applications Designer'},
+                {studentId: 'STD-004', name: 'Queen Emily', institute: 'Refactory', role: 'Class Representative'},
+                {studentId: 'STD-005', name: 'Isaac Semugenyi', institute: 'Refactory', role: 'Co-facilitator'},
+                {studentId: 'STD-006', name: 'Julius Wasajja', institute: 'Refactory', role: 'Gamer'},
+            ]
+        }
     }
 }
 </script>

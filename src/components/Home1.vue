@@ -8,8 +8,6 @@
                 v-bind:institute="student1.institute"
                 v-bind:role="student1.role"
             />
-            <StudentList studentId="STD-002" name="Davies Wabuluka" institute="Refactory" role="Student"/>
-            <StudentList studentId="STD-003" name="Tsumaiya Nabawanuka" institute="Refactory" role="Student"/>
         </h1>
     </div>
 </template>
