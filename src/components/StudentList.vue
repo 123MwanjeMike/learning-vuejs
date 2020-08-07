@@ -1,5 +1,6 @@
 <template>
     <div>
+        <h3>Students</h3>
         <div id="student-card" v-for="student in students" v-bind:key="student.studentId">
         <hr/>
             <span><b>Student ID: </b>{{student.studentId}}</span><br>
@@ -13,12 +14,6 @@
 <script>
 export default {
     name: 'StudentList',
-    props: {
-        studentId: String,
-        name: String,
-        institute: String,
-        role: String,
-    },
     data(){
         return {
             students: [

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>This is Mike's first vue app</h1>
+        <h1>This is Demo page</h1>
     </div>
 </template>
 
